@@ -23,7 +23,7 @@ Example workflow, for a package starting at version 0.0.0.dev0:
     - Version gets bumped from 0.0.0.dev0 to 0.0.0.
     - Last commit gets tagged as *v0.0.0* and uploaded to PyPI.
     - Version gets bumped again from 0.0.0 to 0.0.1.dev0.
-- Add one or more backwards-compatible new feature.
+- Add one or more backwards-compatible new features.
 - Run `make bump-minor`.
     - Version gets bumped from 0.0.1.dev0 to 0.1.0.dev0.
 - Refine new features.
