@@ -7,12 +7,14 @@ help:
 	@echo "bump-minor:  bump the minor version number"
 
 release: | bump-release upload bump-patch
-	git push --follow-tags
+	git push
+	git push --tags
 
 release-dev: | assert-nondirty upload
 	git tag "v$(call current_version)"
 	bumpversion --message "Bump development release number" dev
-	git push --follow-tags
+	git push
+	git push --tags
 
 bump-major:
 	$(call targetnext, major)
